@@ -1,6 +1,7 @@
+
 Final React Project - Recipes and Authentication Process
 
-Project Description
+פרויקט גמר - מתכונים ותהליך אימות
 
 This is a React 19 project featuring a recipe management system with account creation and login functionality. Logged-in users can add new recipes, while all users can view the recipe list. The project integrates a client-side application written in React with a Node.js server-side component.
 
@@ -98,4 +99,10 @@ Notes
 
 Separate .gitignore files exist for client/ and server/ to prevent uploading unwanted files.
 
+
 🚀 Good luck! 😊
+
+קובצי .gitignore קיימים בנפרד עבור client/ ו-server/ למניעת העלאת קבצים לא רצויים.
+
+🚀 בהצלחה! 😊
+
