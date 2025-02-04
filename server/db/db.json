@@ -1,0 +1,213 @@
+{
+  "users": [
+    {
+      "id": 1738586227633,
+      "email": "1@1",
+      "password": "1",
+      "name": "מלכה111",
+      "lname": "ברמן",
+      "addres": "רבי עקיבא",
+      "phone": "0556734462"
+    },
+    {
+      "id": 1738588011752,
+      "email": "559120b@gmail.com",
+      "password": "1",
+      "name": "מלכה cm",
+      "lname": "ברמן",
+      "addres": "רבי עקיבא",
+      "phone": "0556734462"
+    },
+    {
+      "id": 1738595090573,
+      "email": "e!@s",
+      "password": "1",
+      "name": "מלכה",
+      "lname": "ברמן",
+      "addres": "רבי עקיבא",
+      "phone": "0556734462"
+    },
+    {
+      "id": 1738599627542,
+      "email": "9@9",
+      "password": "1",
+      "name": "מלכה",
+      "lname": "ברמן",
+      "addres": "רבי עקיבא",
+      "phone": "0556734462"
+    }
+  ],
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Pasta Alfredo",
+      "description": "Pasta with a rich cream sauce",
+      "authorId": 1,
+      "ingredients": [
+        "200g pasta",
+        "100ml cream",
+        "50g parmesan cheese",
+        "1 clove garlic",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": "Cook the pasta according to the package instructions. In a separate pan, heat the cream and add the garlic. Stir in the parmesan cheese until melted. Combine the pasta with the sauce and season with salt and pepper."
+    },
+    {
+      "id": 2,
+      "title": "Chicken Curry",
+      "description": "Spicy and flavorful chicken curry",
+      "authorId": 1,
+      "ingredients": [
+        "500g chicken breast",
+        "1 onion",
+        "2 cloves garlic",
+        "400ml coconut milk",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": "Heat the oil in a pan and sauté the chopped onion and garlic until golden. Add the chicken pieces and cook until browned. Stir in the curry powder and cook for another minute. Pour in the coconut milk and simmer for 20 minutes. Season with salt and pepper."
+    },
+    {
+      "id": 3,
+      "title": "Chocolate Cake",
+      "description": "Rich and moist chocolate cake",
+      "authorId": 3,
+      "ingredients": [
+        "200g flour",
+        "200g sugar",
+        "100g cocoa powder",
+        "1 tsp baking powder",
+        "1 tsp baking soda",
+        "2 eggs",
+        "240ml milk",
+        "120ml vegetable oil",
+        "2 tsp vanilla extract",
+        "240ml boiling water"
+      ],
+      "instructions": "Preheat the oven to 175°C (350°F). In a large bowl, mix the flour, sugar, cocoa powder, baking powder, and baking soda. Add the eggs, milk, oil, and vanilla extract, and mix until smooth. Gradually add the boiling water and mix until well combined. Pour the batter into a greased baking pan and bake for 30-35 minutes. Let cool before serving."
+    },
+    {
+      "id": 1738521962445,
+      "title": "1",
+      "description": "1",
+      "authorId": "1738266825199",
+      "ingredients": [
+        "1"
+      ],
+      "instructions": "1"
+    },
+    {
+      "id": 1738522157127,
+      "title": "nh",
+      "description": "nh",
+      "authorId": "1738266825199",
+      "ingredients": [
+        "r"
+      ],
+      "instructions": "wrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr"
+    },
+    {
+      "id": 1738523796093,
+      "title": "1",
+      "description": "1",
+      "authorId": "1738266825199",
+      "ingredients": [
+        "1"
+      ],
+      "instructions": "1"
+    },
+    {
+      "id": 1738524014853,
+      "title": "חי",
+      "description": "חי",
+      "authorId": "1738266825199",
+      "ingredients": [
+        "י"
+      ],
+      "instructions": "י"
+    },
+    {
+      "id": 1738588071121,
+      "title": "/'קקראטו",
+      "description": "1",
+      "authorId": "1738588011752",
+      "ingredients": [
+        "1"
+      ],
+      "instructions": "1"
+    },
+    {
+      "id": 1738594864022,
+      "title": "1",
+      "description": "1",
+      "authorId": "1738586227633",
+      "ingredients": [
+        "1"
+      ],
+      "instructions": "1"
+    },
+    {
+      "id": 1738595114385,
+      "title": "רספי",
+      "description": "ר",
+      "authorId": "1738595090573",
+      "ingredients": [
+        "ר",
+        ""
+      ],
+      "instructions": "ר"
+    },
+    {
+      "id": 1738601549069,
+      "title": "q",
+      "description": "q",
+      "authorId": "1738595090573",
+      "ingredients": [
+        "q",
+        "q"
+      ],
+      "instructions": "q"
+    },
+    {
+      "id": 1738625366354,
+      "title": "e@",
+      "description": "very ",
+      "authorId": "1738595090573",
+      "ingredients": [
+        "d"
+      ],
+      "instructions": "n"
+    },
+    {
+      "id": 1738626873992,
+      "title": "ש",
+      "description": "ג",
+      "authorId": "1738595090573",
+      "ingredients": [
+        "ג"
+      ],
+      "instructions": "כ"
+    },
+    {
+      "id": 1738627358082,
+      "title": "כדע",
+      "description": "דעכ",
+      "authorId": "1738588011752",
+      "ingredients": [
+        "קעג"
+      ],
+      "instructions": "דרע"
+    },
+    {
+      "id": 1738629192880,
+      "title": "רסיפ1",
+      "description": "א",
+      "authorId": "1738588011752",
+      "ingredients": [
+        "אttttt"
+      ],
+      "instructions": "א"
+    }
+  ]
+}
