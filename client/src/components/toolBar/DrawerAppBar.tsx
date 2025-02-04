@@ -38,8 +38,8 @@ const DrawerAppBar = () => {
           </IconButton>
           <UserSection handleLogin={handleLogin} />
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, display: "flex", alignItems: "center", justifyContent: "center" }}>
-            🍽️ Malki & Ayala
-          </Typography>
+            🍽️ Malki
+                      </Typography>
           <Box sx={{ display: { xs: "none", sm: "flex" }, gap: 2 }}>
             <NavItems />
           </Box>

@@ -5,9 +5,9 @@ const About = () => {
   return (
     <div className="container">
       <div className="card">
-        <h1>About Us – Meet 👩‍🍳Ayala & 👩‍🍳Malki</h1>
+        <h1>About Us </h1>
         <p>
-          Greetings and blessings, dear visitor! We are Malki and Ayala—two friends united by our passion for authentic cuisine and a sincere love for our traditions.
+          Greetings and blessings, dear visitor! We are friends united by our passion for authentic cuisine and a sincere love for our traditions.
         </p>
         <p>
           Our journey began with a simple idea: to create a space where cherished flavors of the past meet the practical needs of modern life, all served with warmth and a sprinkle of humor. 😊

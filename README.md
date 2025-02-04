@@ -1,108 +1,99 @@
+# Recipe API
 
-Final React Project - Recipes and Authentication Process
+## Description
+This API allows users to view, add, and update recipes.  
+- Any user can view recipes.  
+- Only authenticated users can add recipes.  
+- Users can only update their own recipes.  
 
-פרויקט גמר - מתכונים ותהליך אימות
+## Installation
+1. Clone the repository:  
+   ```sh
+   git clone <repository-url>
+   cd <project-folder>
+Install dependencies:
 
-This is a React 19 project featuring a recipe management system with account creation and login functionality. Logged-in users can add new recipes, while all users can view the recipe list. The project integrates a client-side application written in React with a Node.js server-side component.
 
-Key Technologies
 
-React 19 with TypeScript
-
-React Router for navigation management
-
-MUI for UI styling
-
-Yup + React Hook Form for recipe submission form validation
-
-Context API + Reducer for global state management of login
-
-MobX for managing recipe state
-
-Fetch / Axios for API calls with predefined error handling (e.g., 401 errors)
-
-Node.js + Express for the backend server
-
-Project Structure
-
-📦 project-root
- ┣ 📂 client  # Frontend - React
- ┃ ┣ 📂 src
- ┃ ┃ ┣ 📂 components
- ┃ ┃ ┣ 📂 pages
- ┃ ┃ ┣ 📜 App.tsx
- ┃ ┃ ┣ 📜 index.tsx
- ┃ ┃ ┗ ...
- ┃ ┣ 📜 package.json
- ┃ ┣ 📜 .gitignore
- ┃ ┗ 📜 README.md
- ┣ 📂 server  # Backend - Node.js
- ┃ ┣ 📂 src
- ┃ ┃ ┣ 📂 routes
- ┃ ┃ ┣ 📂 controllers
- ┃ ┃ ┣ 📂 models
- ┃ ┃ ┗ 📜 server.ts
- ┃ ┣ 📜 package.json
- ┃ ┣ 📜 .gitignore
- ┃ ┗ 📜 README.md
- ┣ 📜 .gitignore
- ┗ 📜 README.md (if applicable)
-
-Installation and Execution
-
-1. Install Dependencies
-
-Run the following commands in the root project directory:
-
-cd client
-npm install
-cd ../server
-npm install
-
-2. Start the Server
+Start the server:
 
 cd server
-npm run dev
-
-3. Start the Client
-
-cd client
+npm install
 npm start
 
-Core Features
+Start the client:
 
-1. Login and Registration
+cd client
+npm install
+npm start
 
-Users can register and log in to the system.
+Recent Changes in the server
+1. Users can only update their own recipes
+Before: Any user could update any recipe.
+Now: A user can only update recipes they have created.
 
-After logging in, users can add new recipes.
+2. Only authenticated users can add recipes
+This ensures that anonymous users cannot add new recipes.
 
-2. Navigation Menu
+Code Changes
+Updated Recipe Update Logic
+Before:
 
-Side/Top menu for displaying recipes.
+```js
+router.put('/', authMiddleware, (req, res) => {
+    const { title, description, products, ingredients, instructions } = req.body;
+    const id = parseInt(req.header('recipe-id'));
+    const db = JSON.parse(fs.readFileSync(dbPath));
 
-Displays a list of all recipes from the server (accessible to all users).
+    const recipe = db.recipes.find(recipe => recipe.id === id);
+    if (!recipe) {
+        return res.status(404).json({ message: "Recipe not found" });
+    }
 
-Clicking on a recipe shows its details on the other side of the screen.
+    recipe.title = title;
+    recipe.description = description;
+    recipe.products = products;
+    recipe.ingredients = ingredients;
+    recipe.instructions = instructions;
+    
+    fs.writeFileSync(dbPath, JSON.stringify(db, null, 2));
+    res.json({ message: "Recipe updated", recipe });
+});
+```
+After:
 
-3. Recipe Submission (For Logged-in Users Only)
+```js
+router.put('/', authMiddleware, (req, res) => {
+    const { title, description, products, ingredients, instructions } = req.body;
+    const id = parseInt(req.header('recipe-id'));
+    const userId = req.header('user-id'); // Get user ID from header
+    const db = JSON.parse(fs.readFileSync(dbPath));
 
-Form built with React Hook Form + Yup.
+    const recipe = db.recipes.find(recipe => recipe.id === id);
+    if (!recipe) {
+        return res.status(404).json({ message: "Recipe not found" });
+    }
 
-Data is sent to the server with User-ID for verification.
+    if (recipe.authorId !== userId) {
+        return res.status(403).json({ message: "You can only update your own recipes" });
+    }
 
-4. Recipe Updates (For Logged-in Users Only)
+    recipe.title = title;
+    recipe.description = description;
+    recipe.products = products;
+    recipe.ingredients = ingredients;
+    recipe.instructions = instructions;
 
-Users can update only their own recipes.
+    fs.writeFileSync(dbPath, JSON.stringify(db, null, 2));
+    res.json({ message: "Recipe updated", recipe });
+});
+```
+
+there are several changes in the variables's namemes....
+
+there are no more changes in the code.
+
 
 Notes
-
-Separate .gitignore files exist for client/ and server/ to prevent uploading unwanted files.
-
-
-🚀 Good luck! 😊
-
-קובצי .gitignore קיימים בנפרד עבור client/ ו-server/ למניעת העלאת קבצים לא רצויים.
-
-🚀 בהצלחה! 😊
-
+authMiddleware ensures authentication for protected routes.
+authorId is stored for each recipe and checked before updates.
