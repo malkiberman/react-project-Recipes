@@ -1,33 +1,31 @@
-ויקט גמר - מתכונים ותהליך אימות
+Final React Project - Recipes and Authentication Process
 
-תיאור הפרויקט
+Project Description
 
-זהו פרויקט React 19 הכולל מערכת לניהול מתכונים עם אפשרות ליצירת חשבון ולוגין. משתמשים מחוברים יכולים להוסיף מתכונים חדשים, בעוד שכל המשתמשים יכולים לצפות ברשימת המתכונים. הפרויקט משלב צד לקוח שנכתב ב-React עם צד שרת ב-Node.js.
+This is a React 19 project featuring a recipe management system with account creation and login functionality. Logged-in users can add new recipes, while all users can view the recipe list. The project integrates a client-side application written in React with a Node.js server-side component.
 
-טכנולוגיות עיקריות
+Key Technologies
 
-React 19 עם TypeScript
+React 19 with TypeScript
 
-React Router לניהול הניווט
+React Router for navigation management
 
-MUI לעיצוב הממשק
+MUI for UI styling
 
-Yup + React Hook Form לטופס הוספת מתכון
+Yup + React Hook Form for recipe submission form validation
 
-Context API + Reducer לניהול סטייט גלובלי של לוגין
+Context API + Reducer for global state management of login
 
-MobX  לניהול סטייט של המתכונים
+MobX for managing recipe state
 
-Fetch / Axios לקריאות API עם טיפול בשגיאות ידועות מראש (כמו 401)
+Fetch / Axios for API calls with predefined error handling (e.g., 401 errors)
 
-Node.js + Express בצד השרת
+Node.js + Express for the backend server
 
-
-
-מבנה הפרויקט
+Project Structure
 
 📦 project-root
- ┣ 📂 client  # צד לקוח - React
+ ┣ 📂 client  # Frontend - React
  ┃ ┣ 📂 src
  ┃ ┃ ┣ 📂 components
  ┃ ┃ ┣ 📂 pages
@@ -37,7 +35,7 @@ Node.js + Express בצד השרת
  ┃ ┣ 📜 package.json
  ┃ ┣ 📜 .gitignore
  ┃ ┗ 📜 README.md
- ┣ 📂 server  # צד שרת - Node.js
+ ┣ 📂 server  # Backend - Node.js
  ┃ ┣ 📂 src
  ┃ ┃ ┣ 📂 routes
  ┃ ┃ ┣ 📂 controllers
@@ -46,58 +44,58 @@ Node.js + Express בצד השרת
  ┃ ┣ 📜 package.json
  ┃ ┣ 📜 .gitignore
  ┃ ┗ 📜 README.md
- ┗ 📜 README.md (אם יש)
+ ┣ 📜 .gitignore
+ ┗ 📜 README.md (if applicable)
 
-התקנה והפעלה
+Installation and Execution
 
-1. התקנת הפרויקט
+1. Install Dependencies
 
-יש להריץ את הפקודות הבאות בשורש התיקייה הראשית של הפרויקט:
+Run the following commands in the root project directory:
 
 cd client
 npm install
 cd ../server
 npm install
 
-2. הפעלת השרת
+2. Start the Server
 
 cd server
 npm run dev
 
-3. הפעלת הלקוח
+3. Start the Client
 
 cd client
 npm start
 
-תהליכים עיקריים בפרויקט
+Core Features
 
-1. לוגין ורישום
+1. Login and Registration
 
-משתמשים יכולים להירשם ולהתחבר למערכת.
+Users can register and log in to the system.
 
-לאחר התחברות, המשתמש יכול להוסיף מתכונים חדשים.
+After logging in, users can add new recipes.
 
-2. תפריט ניווט
+2. Navigation Menu
 
-תפריט צד/עליון להצגת המתכונים.
+Side/Top menu for displaying recipes.
 
-הצגת רשימת כל המתכונים מהשרת (גם למשתמשים לא רשומים).
+Displays a list of all recipes from the server (accessible to all users).
 
-בלחיצה על מתכון, מוצג פירוט המתכון בצד השני של המסך.
+Clicking on a recipe shows its details on the other side of the screen.
 
-3. הוספת מתכון (למשתמשים רשומים בלבד)
+3. Recipe Submission (For Logged-in Users Only)
 
-טופס מבוסס React Hook Form + Yup.
+Form built with React Hook Form + Yup.
 
-שליחת הנתונים לשרת עם User-ID לאימות.
+Data is sent to the server with User-ID for verification.
 
-4. עדכון  מתכונים (למשתמשים רשומים בלבד)
-כל משתמש יכול לעדכן מתכונים שלו בלבד.
+4. Recipe Updates (For Logged-in Users Only)
 
-הערות
+Users can update only their own recipes.
 
+Notes
 
+Separate .gitignore files exist for client/ and server/ to prevent uploading unwanted files.
 
-קובצי .gitignore קיימים בנפרד עבור client/ ו-server/ למניעת העלאת קבצים לא רצויים.
-
-🚀 בהצלחה! 😊
+🚀 Good luck! 😊
