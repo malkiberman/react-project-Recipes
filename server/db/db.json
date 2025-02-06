@@ -8,34 +8,8 @@
       "lname": "ברמן",
       "addres": "רבי עקיבא",
       "phone": "0556734462"
-    },
-    {
-      "id": 1738588011752,
-      "email": "559120b@gmail.com",
-      "password": "1",
-      "name": "מלכה cm",
-      "lname": "ברמן",
-      "addres": "רבי עקיבא",
-      "phone": "0556734462"
-    },
-    {
-      "id": 1738595090573,
-      "email": "e!@s",
-      "password": "1",
-      "name": "מלכה",
-      "lname": "ברמן",
-      "addres": "רבי עקיבא",
-      "phone": "0556734462"
-    },
-    {
-      "id": 1738599627542,
-      "email": "9@9",
-      "password": "1",
-      "name": "מלכה",
-      "lname": "ברמן",
-      "addres": "רבי עקיבא",
-      "phone": "0556734462"
     }
+    
   ],
   "recipes": [
     {
@@ -96,118 +70,6 @@
         "1"
       ],
       "instructions": "1"
-    },
-    {
-      "id": 1738522157127,
-      "title": "nh",
-      "description": "nh",
-      "authorId": "1738266825199",
-      "ingredients": [
-        "r"
-      ],
-      "instructions": "wrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr"
-    },
-    {
-      "id": 1738523796093,
-      "title": "1",
-      "description": "1",
-      "authorId": "1738266825199",
-      "ingredients": [
-        "1"
-      ],
-      "instructions": "1"
-    },
-    {
-      "id": 1738524014853,
-      "title": "חי",
-      "description": "חי",
-      "authorId": "1738266825199",
-      "ingredients": [
-        "י"
-      ],
-      "instructions": "י"
-    },
-    {
-      "id": 1738588071121,
-      "title": "/'קקראטו",
-      "description": "1",
-      "authorId": "1738588011752",
-      "ingredients": [
-        "1"
-      ],
-      "instructions": "1"
-    },
-    {
-      "id": 1738594864022,
-      "title": "1",
-      "description": "1",
-      "authorId": "1738586227633",
-      "ingredients": [
-        "1"
-      ],
-      "instructions": "1"
-    },
-    {
-      "id": 1738595114385,
-      "title": "רספי",
-      "description": "ר",
-      "authorId": "1738595090573",
-      "ingredients": [
-        "ר",
-        ""
-      ],
-      "instructions": "ר"
-    },
-    {
-      "id": 1738601549069,
-      "title": "q",
-      "description": "q",
-      "authorId": "1738595090573",
-      "ingredients": [
-        "q",
-        "q"
-      ],
-      "instructions": "q"
-    },
-    {
-      "id": 1738625366354,
-      "title": "e@",
-      "description": "very ",
-      "authorId": "1738595090573",
-      "ingredients": [
-        "d"
-      ],
-      "instructions": "n"
-    },
-    {
-      "id": 1738626873992,
-      "title": "ש",
-      "description": "ג",
-      "authorId": "1738595090573",
-      "ingredients": [
-        "ג"
-      ],
-      "instructions": "כ"
-    },
-    {
-      "id": 1738627358082,
-      "title": "כדע",
-      "description": "דעכ",
-      "authorId": "1738588011752",
-      "ingredients": [
-        "קעג"
-      ],
-      "instructions": "דרע"
-    },
-    {
-      "id": 1738629192880,
-      "title": "רסיפ1",
-      "description": "א",
-      "authorId": "1738588011752",
-      "ingredients": [
-        "אttttt"
-      ],
-      "instructions": "א"
     }
   ]
 }
